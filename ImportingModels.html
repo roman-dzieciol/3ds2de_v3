@@ -1,0 +1,965 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ImportingModels_files/filelist.xml">
+<title>Getting Animations into Deus Ex</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dave Townsend</o:Author>
+  <o:LastAuthor>Roman Dzieciol</o:LastAuthor>
+  <o:Revision>19</o:Revision>
+  <o:TotalTime>657</o:TotalTime>
+  <o:Created>2001-05-26T03:13:00Z</o:Created>
+  <o:LastSaved>2007-05-13T03:01:00Z</o:LastSaved>
+  <o:Pages>6</o:Pages>
+  <o:Words>1879</o:Words>
+  <o:Characters>10713</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>89</o:Lines>
+  <o:Paragraphs>21</o:Paragraphs>
+  <o:CharactersWithSpaces>13156</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:TargetScreenSize>640x480</o:TargetScreenSize>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>150</w:Zoom>
+  <w:DoNotHyphenateCaps/>
+  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129279 0;}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:128;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1 -369098753 63 0 4129279 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-next:Normal;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:green;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.FixedWidth, li.FixedWidth, div.FixedWidth
+	{mso-style-name:FixedWidth;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:36.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.Error, li.Error, div.Error
+	{mso-style-name:Error;
+	mso-style-parent:FixedWidth;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.ErrorExplanation, li.ErrorExplanation, div.ErrorExplanation
+	{mso-style-name:ErrorExplanation;
+	margin-top:3.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:519776450;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1710701942 -623839478 -915771214 -582737642 -749334574 775700994 -1435583508 -25639798 1704366148 37500516;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:1517620541;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l1:level1
+	{mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:2092726669;
+	mso-list-type:simple;
+	mso-list-template-ids:-367898448;}
+@list l2:level1
+	{mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=purple style='tab-interval:36.0pt'
+leftmargin=20 topmargin=20>
+
+<div class=Section1>
+
+<h1 align=center style='text-align:center'><span style='font-size:18.0pt;
+mso-bidi-font-size:10.0pt'>Getting Models into Deus Ex<o:p></o:p></span></h1>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><i
+style='mso-bidi-font-style:normal'>Dave Townsend<o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><i
+style='mso-bidi-font-style:normal'><a href="mailto:townsend@patriot.net"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>townsend@patriot.net</span></a><o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><i
+style='mso-bidi-font-style:normal'>Legend Entertainment Company<o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><i
+style='mso-bidi-font-style:normal'>703-968-5067<o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><i
+style='mso-bidi-font-style:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><i
+style='mso-bidi-font-style:normal'>Update: 25 May 2001 by Steve Tack (for Deus
+Ex) <o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><i
+style='mso-bidi-font-style:normal'>Deus Ex changes to original 3ds2unr document
+are in <span style='color:red'>RED<o:p></o:p></span></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><i
+style='mso-bidi-font-style:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><i
+style='mso-bidi-font-style:normal'>Update: 12 May 2007 by Roman Switch`
+Dzieciol (Jim’s V2 syntax plus two new flags)<span style='color:red'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><i
+style='mso-bidi-font-style:normal'>New material flags are in <span
+style='color:green'>GREEN</span>.<o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<h1>Issues For Artists</h1>
+
+<h2>Modeling</h2>
+
+<h2>&nbsp;</h2>
+
+<p class=MsoNormal>Models must be made up of a single 3D Studio object, which
+lives within the 256x256x256 coordinate space centered on the origin.<span
+style="mso-spacerun: yes">  </span>(Setting the grid extents to –128..128 and
+turning on the grid is helpful here.)<span style="mso-spacerun: yes"> 
+</span>The model itself should be centered on the origin (0,0,0) because of how
+Unreal specifies the collision cylinders used to determine when objects are
+touching. </p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>Object polygons shouldn’t intersect.<span
+style="mso-spacerun: yes">  </span>The hardware supported by Unreal gets
+confused when polygons intersect, resulting in an unpleasant shimmering.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>If your object is a character that will be carrying a weapon
+that will be separately modeled, place an extra polygon (the <i
+style='mso-bidi-font-style:normal'>weapon triangle</i>) in or on the part of
+the character where the weapon should be.<span style="mso-spacerun: yes"> 
+</span>This polygon will be invisible in the game; it’s just used to sync the
+weapon’s position with the character’s animation.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>The conversion tool will only convert objects with sequence
+numbers in their names (<span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>Obj01</span>, <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>Obj02</span>, <span style='font-family:
+"Courier New";mso-bidi-font-family:"Times New Roman"'>...). </span>The object
+name itself is meaningless; it’s the sequence numbers that count. They must
+begin at 01 (even if that’s the only frame!) and you can’t have any “holes” in
+the sequence.<span style="mso-spacerun: yes">   </span>(Under 3D Studio 4, it
+was easiest to use the “Snapshot” option; I’m not sure how 3DS MAX handles
+this.)<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></b></p>
+
+<p class=MsoNormal>Objects that won’t be animated (e.g. 3rd person weapon
+views) should be in their own <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>.3DS</span> file (e.g. save the angreal
+of healing as <span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>AngrealHeal.3DS</span>).<span
+style="mso-spacerun: yes">  </span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>Animation</h2>
+
+<h2>&nbsp;</h2>
+
+<p class=MsoNormal>Make sure that all animation frames stay entirely within the
+256x256x256 coordinate space.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>The Unreal animators are typically designing their
+animations for 30-35 fps playback.<span style="mso-spacerun: yes">  </span>Then,
+to save memory, they shave the animations down to 15-17 fps and let Unreal do
+the tweening.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>Objects that are animated should have a separate .3DS file
+for each animation sequence (<span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>Run.3DS</span>, <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>Walk.3DS</span>, <span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>Shoot.3DS</span>,
+etc.).<span style="mso-spacerun: yes">  </span>You probably want a separate directory
+for each animating character, so that each can have it’s own<span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>
+Run.3DS </span>sequence.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>Texture Mapping</h2>
+
+<h2>&nbsp;</h2>
+
+<p class=MsoNormal>You still use 3D Studio to do your texture mapping.<span
+style="mso-spacerun: yes">  </span>However, there are some (pretty heavy)
+restrictions on what will actually show up in Deus Ex.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>The only type of texturing that has any effect is using
+actual texture maps – bump maps, opacity maps, specular maps, etc. are
+meaningless.<span style="mso-spacerun: yes">  </span>Furthermore, the bitmaps
+that you use as textures should be 256x256 pixels in size, and you can’t have
+more than nine of them for any one model.<span style="mso-spacerun: yes"> 
+</span>To conserve memory, you should use as few texture maps as possible. 3DS
+Max V2 allows you to map part of a material to your geometry; using this
+feature lets you squeeze many smaller texture maps together into one big bitmap.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>Under most circumstances, the material names that you use in
+3D Studio don’t matter.<span style="mso-spacerun: yes">  </span>However, there
+are several pre-defined material names that you can use to get special effects
+when the model is imported into Deus Ex.<span style="mso-spacerun: yes"> 
+</span>The special names are:</p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>SKIN</p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>This texture will be assigned as the model’s Skin property
+  in Deus Ex.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>TRANSLUCENT</p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>The polygons mapped with this texture will be marked as
+  translucent, and can have their transparency set by the program.<span
+  style="mso-spacerun: yes">  </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>TWOSIDED</p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>The polygons mapped with this texture will be marked as
+  two-sided, so the texture mapping will show up on both sides of the
+  polygon.&nbsp;&nbsp;<span style='color:red'>This works the same as 3ds2unr,
+  which means the surface will also be set to &quot;masked&quot;.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>WEAPON</p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>The polygon (there should be only one!) mapped with this
+  texture will be marked as the weapon triangle.<span style="mso-spacerun:
+  yes">  </span>So it won’t be visible </p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:red'>TWOSIDEDNORM</span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:red'>This is the samed as TWOSIDED,
+  except that the surface will be set to normal instead of masked.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:red'>UNLIT</span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:red'>The polygons mapped with this
+  texture will be self-illuminating, meaning they will be brightly lit
+  regardless of the light sources near it. An example is the part of the light
+  switch in Deus Ex that is visible even in the dark</span>.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:red'>FLAT</span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:red'>The polygons mapped with this
+  texture will not be rendered with smoothing between polygons.&nbsp;&nbsp;That
+  can be useful for certain types of surfaces.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:red'>ENVMAPPED</span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:red'>The polygons mapped with this
+  texture will be rendered with the Unreal engine's simulated evironment mapped
+  effect. An example is the windows on Jock's helicopter in Deus Ex. &nbsp;Be
+  sure to use a texture with some detail and not a solid color, or the effect
+  will not be visible.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>Note that this naming convention applies to the <i
+style='mso-bidi-font-style:normal'>material</i> name itself; the filename of whatever
+TGA file you use as the bitmap is irrelevant.</p>
+
+<p class=MsoNormal><br>
+<span style='color:red'>NOTE: Because current Unreal tools will not be
+compatible with the Deus Ex formatted .3d files that this utility produces
+(such as UnrealFX), there will be no way of setting the special polygons, other
+than what is listed above. I may provide an enhancement in the future that will
+allow any valid combination of special polygon settings.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='color:red'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText>Alternatively, you can use the Jim’s V2 material syntax
+that allows combining various effects:</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>To set the skin material, use the &quot;SKIN&quot; name,
+but for effects, it's somewhat different. For each different effect for your
+material, here is the list of different effect characters: </p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>Base material types (only one can be used):</p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>D<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>Double-sided (</span><span
+  style='color:red'>TWOSIDEDNORM</span><span style='color:green'>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>M<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>Masked double-sided (</span>TWOSIDED<span
+  style='color:green'>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>O<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin:0cm;margin-bottom:.0001pt'><span
+  style='color:green'>Modulated double-sided (NEW)</span> <span
+  style='color:green'>- Multiplies the source and destination pixels by 2 (like
+  the Photoshop &quot;Multiply&quot; mode). This results in:</span><span
+  style='font-size:12.0pt;font-family:"Arial Unicode MS";color:green'><o:p></o:p></span></p>
+  <ul type=disc>
+   <li class=MsoNormal style='color:green;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l0 level1 lfo5;tab-stops:list 36.0pt'>color 0,0,0 = darken
+       whatever is behind it<o:p></o:p></li>
+   <li class=MsoNormal style='color:green;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l0 level1 lfo5;tab-stops:list 36.0pt'>color 127,127,127 =
+       no change<o:p></o:p></li>
+   <li class=MsoNormal style='color:green;mso-margin-top-alt:auto;mso-margin-bottom-alt:
+       auto;mso-list:l0 level1 lfo5;tab-stops:list 36.0pt'>color 255, 255, 255
+       = brighten whatever is behind it<o:p></o:p></li>
+  </ul>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>T<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>Translucent double-sided (</span>TRANSLUCENT<span
+  style='color:green'>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>W<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>Weapon (</span>WEAPON<span
+  style='color:green'>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>Material modifiers (any combination can be used):</p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>U<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>Unlit (</span><span
+  style='color:red'>UNLIT</span><span style='color:green'>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>F<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>Flat (</span><span
+  style='color:red'>FLAT</span><span style='color:green'>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>E<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>Environment Mapped (</span><span
+  style='color:red'>ENVMAPPED</span><span style='color:green'>)<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=133 valign=top style='width:99.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='color:green'>S<o:p></o:p></span></p>
+  </td>
+  <td width=457 valign=top style='width:342.9pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText>No Texture Smoothing (NEW) - Turns off all texture
+  filtering and smoothing for the surface.</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>Now say for example I want to make a material that's
+translucent and unlit (equivelant of TRANSLUCENT and UNLIT). That materials
+name would be &quot;MyMaterialName.TU&quot;.<span style="mso-spacerun: yes"> 
+</span></p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>You can use only one base material type but any number of
+modifiers. For example “Skin1.DUFES” or “Skin1.OU” will work, but “Skin1.MO”
+won't work. This is a limitation of the UnrealEd's mesh importer.</p>
+
+<p class=MsoBodyText><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoBodyText>The order and case of those letters doesn’t matter.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1>Converting to Deus Ex Format</h1>
+
+<h2>Preparation</h2>
+
+<h2>&nbsp; </h2>
+
+<p class=MsoNormal>You’ll need a copy of the <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>3ds2de.exe</span> conversion program,
+plus some way (<b style='mso-bidi-font-weight:normal'>Photoshop</b>, <b
+style='mso-bidi-font-weight:normal'>Debabylizer</b>, etc.) of converting TGA
+files to PCX format.<span style="mso-spacerun: yes">  </span>A text editor (<b
+style='mso-bidi-font-weight:normal'>Notepad</b> will do in a pinch) is also
+handy.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>The conversion program expects an Deus Ex-like directory
+structure to exist before it will run.<span style="mso-spacerun: yes"> 
+</span>Specifically, you need:</p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 18.0pt'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>a main Deus Ex directory (mine is <span style='font-family:
+"Courier New";mso-bidi-font-family:"Times New Roman"'>c:\DeusEx</span>), below
+which is a</p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 18.0pt'><![if !supportLists]>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>project-specific directory (for example, <span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>c:\DeusEx\MyPackage</span>),
+below which are</p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 18.0pt'><![if !supportLists]>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>two directories, Models and Classes (e.g. <span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>c:\DeusEx\MyPackage\Models</span>
+and <span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>c:\DeusEx\MyPackage\Classes</span>)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo2;
+tab-stops:list 18.0pt'><![if !supportLists]>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><![endif]>&nbsp; </p>
+
+<p class=MsoNormal>This directory tree is what Deus Ex itself expects, so it
+may already be set up.<span style="mso-spacerun: yes">  </span>If it isn’t,
+you’ll have to make it yourself before doing any conversions.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>The converter is a Windows console application, meaning it
+runs by typing rather than pointing and clicking.<span style="mso-spacerun:
+yes">  </span>Make sure that the <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>3ds2de.exe</span> program is somewhere
+in your DOS path before you begin.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>Using the Converter</h2>
+
+<h2>&nbsp; </h2>
+
+<p class=MsoNormal>Once you’re set up, using the converter is pretty
+simple.<span style="mso-spacerun: yes">  </span>Just type <span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>3ds2de</span>,
+followed by an optional class name and one or more .3DS files, like so:</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=FixedWidth>C:\&gt;3ds2de Trolloc Walk.3ds Run.3ds Attack.3ds</p>
+
+<p class=FixedWidth>&nbsp; </p>
+
+<p class=MsoNormal>The converter reads the given 3DS files, and produces a
+class file (<span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>Trolloc.uc</span>)
+and model files (<span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>Trolloc_a.3d</span> and <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>Trolloc_d.3d</span>) to be used by Deus
+Ex.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>If this is the first time that you’ve run the converter,
+you’ll be prompted to select your project directory (i.e. the directory from
+item #2 in the preparation list (for me, <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>c:\DeusEx\MyPackage</span>).<span
+style="mso-spacerun: yes">  </span>Once you’ve set this directory, you won’t
+need to set it again.<span style="mso-spacerun: yes">  </span>If you do need to
+change it, because you’ve began a new project, just type</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=FixedWidth>C:\&gt;3ds2de –setproj</p>
+
+<p class=FixedWidth>&nbsp; </p>
+
+<p class=MsoNormal>and you’ll be able to select another project directory.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>When specifying 3DS files, you can use standard DOS wildcard
+characters (`?' and `*'). So, if all of those Trolloc animation sequences were
+the only 3DS files in the current directory, you could type:</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=FixedWidth>C:\&gt;3ds2de Trolloc *.3ds</p>
+
+<p class=FixedWidth>&nbsp; </p>
+
+<p class=MsoNormal>The class name is just the name of the object that you’re
+converting (Trolloc, AngrealHealing, Myrddraal, etc.) and is used as the base
+filename for the converter’s output.<span style="mso-spacerun: yes">  </span>If
+you’re converting an object with no animation, you can omit the class name, in which
+case the base name of the sole 3DS file is used as the class name.<span
+style="mso-spacerun: yes">  </span>In other words, this:</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=FixedWidth>C:\&gt;3ds2de AngrealHeal.3ds</p>
+
+<p class=FixedWidth>&nbsp; </p>
+
+<p class=MsoNormal>does what you probably want it to.<span style="mso-spacerun:
+yes">  </span>However, if you try to convert more than one 3DS file at a time
+without supplying a class name, you'll be prompted to make sure that the class
+name inferred by the converter is correct.<span style="mso-spacerun: yes"> 
+</span>For example, omitting the &quot;Trolloc&quot; from the previous example
+is probably an error:</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=FixedWidth style='margin-bottom:0cm;margin-bottom:.0001pt'>c:&gt;3ds2de
+*.3ds</p>
+
+<p class=FixedWidth style='margin-top:0cm'>ClassName [Walk]? </p>
+
+<p class=FixedWidth style='margin-top:0cm'>&nbsp;</p>
+
+<p class=MsoNormal>You can just hit Enter to continue with that name, or type
+the correct name (Trolloc) first.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>Be careful with your class names – the converter will
+happily overwrite existing files.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<h2>Converter Output</h2>
+
+<h2>&nbsp; </h2>
+
+<p class=MsoNormal>The converter will create three files:</p>
+
+<p class=FixedWidth style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:54.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l2 level1 lfo4;
+tab-stops:list 54.0pt'><![if !supportLists]>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span><![endif]>...\Models\ClassName_a.3d </p>
+
+<p class=FixedWidth style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l2 level1 lfo4;
+tab-stops:list 54.0pt'><![if !supportLists]>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span><![endif]>...\Models\ClassName_d.3d</p>
+
+<p class=FixedWidth style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:54.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo4;tab-stops:list 54.0pt'><![if !supportLists]>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span><![endif]>...\Classes\ClassName.uc</p>
+
+<p class=FixedWidth style='margin-top:0cm;margin-right:0cm;margin-bottom:3.0pt;
+margin-left:54.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo4;tab-stops:list 54.0pt'><![if !supportLists]>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span><![endif]>&nbsp;
+</p>
+
+<p class=MsoNormal>(where &quot;<span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>...</span>&quot; is your project
+directory).</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>The .uc file will contain the appropriate UnrealScript
+commands to import your model, list its animation sequences, and set its
+textures.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>Deus Ex needs all three files to use your model.<span
+style="mso-spacerun: yes">  </span>The same three files are used by the Mesh
+Viewer (see below, and separate documentation) to view models.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><span style='color:red'>NOTE: The scaling factor in the mesh
+import statements will default to 0.00390625 (1/256) in the generated .uc file.
+That is a Deus Ex specific change.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>Fixing Texture Maps</h2>
+
+<h2>&nbsp; </h2>
+
+<p class=MsoNormal>Since the converter doesn’t read 3DS materials files, and
+Deus Ex requires PCX rather than TGA-format input, you have to manually help
+out the converter.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>First, you need 8-bit PCX versions of all of the textures
+that you used in the model – use Photoshop, etc.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>You then need to examine the .uc file in a text editor that
+can handle straight ASCII text – Notepad is fine.<span style="mso-spacerun:
+yes">  </span>Look for the lines that begin with <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>#exec TEXTURE IMPORT</span> and note
+that each such line ends with a material name after a pair of slashes:</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=FixedWidth>#exec TEXTURE IMPORT NAME=JSpider1
+FILE=MODELS\Spider1.PCX<span style="mso-spacerun: yes">         
+</span>GROUP=Skins // SpiderSkin</p>
+
+<p class=FixedWidth>&nbsp; </p>
+
+<p class=MsoNormal>(The above should be a single line, but can’t be shown here
+legibly that way.)</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>Notice the reference to a <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>Spider1.PCX</span> file.<span
+style="mso-spacerun: yes">  </span>Both Deus Ex and MeshViewer will need this
+file to properly display your model.<span style="mso-spacerun: yes">  
+</span>It corresponds to whatever TGA file you used in the given material, <span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>SpiderSkin</span>.<span
+style="mso-spacerun: yes">  </span>You need to have this file name match the name
+of the material’s 8-bit PCX file, which you can do by either editing the .uc
+file directly, or renaming your PCX file to correspond with the name in the .uc
+file.</p>
+
+<p class=MsoNormal>&nbsp; </p>
+
+<p class=MsoNormal>Using the above example, say that the <span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>SpiderSkin</span>
+material was made with a <span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'>SpiderSkin.TGA</span> texture map.<span style="mso-spacerun:
+yes">  </span>You’d convert that TGA file to and 8-bit <span style='font-family:
+"Courier New";mso-bidi-font-family:"Times New Roman"'>SpiderSkin.PCX</span>
+file.<span style="mso-spacerun: yes">  </span>You could then either rename that
+file to <span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>Spider1.PCX</span>
+(because that’s what the script is expecting), or edit the script to look for <span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>SpiderSkin.PCX</span>
+instead of <span style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>Spider1.PCX</span>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>Conversion Errors and Warnings</h2>
+
+<p class=MsoNormal>You might encounter the following problems when converting:</p>
+
+<p class=Error>can't find file</p>
+
+<p class=ErrorExplanation style='margin-left:36.0pt'>You referred to a file
+that doesn’t exist.<span style="mso-spacerun: yes">  </span>Make sure you’ve
+typed the name and directory correctly.</p>
+
+<p class=Error>No project directory found – exiting</p>
+
+<p class=ErrorExplanation style='margin-left:36.0pt'>The converter couldn’t
+establish a project directory, either because you cancelled out or there’s a
+problem in the system registry.<span style="mso-spacerun: yes">  </span>Make
+sure that your project directory structure is correct, then try rerunning the
+converter with the<span style='font-family:"Courier New";mso-bidi-font-family:
+"Times New Roman"'> –setproj</span> option before attempting conversion
+again.<span style="mso-spacerun: yes">  </span>The converter cannot run without
+a project directory.</p>
+
+<p class=Error>read error [TAG]</p>
+
+<p class=ErrorExplanation style='margin-left:36.0pt'>The converter was
+expecting data that wasn’t there.<span style="mso-spacerun: yes">  </span>This
+probably means the 3DS file is corrupted.</p>
+
+<p class=Error>too many textures</p>
+
+<p class=ErrorExplanation style='margin-left:36.0pt'>Unreal has a limit of ten materials
+that can be applied to an object, and the converter encountered an eleventh
+material.<span style="mso-spacerun: yes">  </span>For memory and rendering
+performance reasons, you really should be using less than ten anyway.</p>
+
+<p class=Error>Warning: out of sequence obj (Foo) skipped</p>
+
+<p class=ErrorExplanation style='margin-left:36.0pt'>The converter expects to
+find sequentially numbered objects in file, and it found an object either
+without a sequence number (e.g. <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>Box</span> instead of <span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>Box01</span>)
+or with an out-of-sequence number (e.g. <span style='font-family:"Courier New";
+mso-bidi-font-family:"Times New Roman"'>Box01</span>, <span style='font-family:
+"Courier New";mso-bidi-font-family:"Times New Roman"'>Box02</span>, <span
+style='font-family:"Courier New";mso-bidi-font-family:"Times New Roman"'>Box04</span>).<span
+style="mso-spacerun: yes">  </span>This is probably something you want to fix,
+although in some cases, like leaving a stray light source in the project, it
+might be OK to ignore (providing that the correct object was converted).</p>
+
+<p class=Error>Warning: Filename.3DS: Bad coordinate x.xxxxx, y.yyyyy, z.zzzzz</p>
+
+<p class=ErrorExplanation style='margin-left:36.0pt'>The converter found a
+coordinate that was outside the allowable 256x256x256 coordinate space.<span
+style="mso-spacerun: yes">  </span>Rescale your model or fix the animation
+sequence.<span style="mso-spacerun: yes">  </span>To minimize warning lines,
+only one bad coordinate is reported per object in the file.</p>
+
+<p class=MsoNormal>If you encounter errors other than those listed here, it
+probably indicates a converter bug.</p>
+
+</div>
+
+</body>
+
+</html>
